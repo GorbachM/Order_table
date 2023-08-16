@@ -278,7 +278,7 @@ table td {
   text-align: left;
 }
 table td:nth-child(-n+5) {
-  padding: 0 80px 0 0;
+  padding: 0px 54px 0 0;
 }
 table td:nth-child(7) {
   font-size: 13px;
@@ -294,7 +294,6 @@ table td:nth-child(7) {
 
 .packing-td {
   cursor: pointer;
-  min-width: 160px;
   flex-shrink: 0;
   height: 30px;
 }
@@ -305,7 +304,7 @@ table td:nth-child(7) {
   border: 2px solid #E49D3E;
   border-radius: 10px;
   color: #E49D3E;
-  padding: 6.5px 18.5px;
+  padding: 6.5px 14.5px;
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
