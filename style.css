@@ -311,6 +311,7 @@ table td:nth-child(7) {
   line-height: normal;
   letter-spacing: 0.325px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .order1 {
