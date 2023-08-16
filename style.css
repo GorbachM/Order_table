@@ -127,6 +127,7 @@ body {
 
 #orders-h {
   height: 42px;
+  margin-bottom: 35px;
 }
 
 #ordersCount {
@@ -209,6 +210,7 @@ button[type=submit] {
 }
 
 .all {
+  text-align: center;
   border-radius: 10px 10px 0 0;
   background: #FFF;
   width: 140px;
