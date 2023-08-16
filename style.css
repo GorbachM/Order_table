@@ -305,7 +305,7 @@ table td:nth-child(7) {
   border: 2px solid #E49D3E;
   border-radius: 10px;
   color: #E49D3E;
-  padding: 6.5px 27.5px;
+  padding: 6.5px 18.5px;
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -325,6 +325,10 @@ table td:nth-child(7) {
   padding: 12px 0;
   border-top: 1px solid #D6DAE6;
   color: #A1A5BA;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 112.5%;
 }
 
 .table-container {
