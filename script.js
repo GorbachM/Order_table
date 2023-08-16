@@ -86,7 +86,7 @@ function showPage(page) {
     let startIndex1 = (currentPage) * rowsPerPage;
     let endIndex1 = startIndex1 + rowsPerPage - 1;
     let items = data.slice(startIndex1, endIndex1);
-    console.log(items);
+    
 // Отображаем элементы на странице
     let rowCount = table.rows.length;
     let itemsContainer = document.getElementById("itemsContainer");
