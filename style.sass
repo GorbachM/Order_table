@@ -1,0 +1,410 @@
+$selection-color: #4C5272
+$secondary-text: #A1A5BA
+$menu-text: #E1E5F0
+
+@font-face
+  font-family: Futura
+  src: url("fonts/FuturaPT.ttf") format('opentype')
+
+
+*
+  padding: 0
+  margin: 0
+  outline: 0
+  border: 0
+  list-style: inherit
+  text-decoration: none
+  box-sizing: border-box
+
+body
+  font-family: Futura
+
+.container
+  height: 100vh
+
+.wrapper
+  display: grid
+  grid-template-columns: minmax(280px, 14.6%) minmax(20px, 85.4%)
+  height: 100%
+
+//ASIDE
+
+.aside
+  display: flex
+  flex-direction: column
+  background: #656D8B
+  padding: 40px 30px 0 30px
+  color: #E1E5F0
+  font-size: 13px
+  font-style: normal
+  font-weight: 500
+  line-height: normal
+  letter-spacing: 0.325px
+
+
+.logo
+  margin: 0 0 30px 0
+  width: 44px
+  height: 33px
+  flex-shrink: 0
+  cursor: pointer
+
+.main
+  background: #E1E5F0
+
+
+.nav__el
+  display: flex
+  align-items: center
+  flex-direction: row
+  border-radius: 10px
+  padding: 16px 0 16px 16px
+
+  svg
+    margin-right: 15px
+
+
+.tab
+  display: flex
+  flex-direction: column
+
+
+.tablinks
+  display: flex
+  align-items: center
+  cursor: pointer
+  padding: 16px 0 16px 16px
+  background: inherit
+  gap: 15px
+  border-radius: 10px
+
+
+.tablinks.active
+  background: #4C5272
+
+.tabcontent:nth-child(n+2)
+  display: none
+
+.admin
+  display: grid
+  grid-template-columns: 55px 77px 1fr
+  align-items: center
+  padding-top: 27px
+  margin-top: 679px
+  border-top: 2px solid #4E5474
+
+  a
+    display: flex
+    grid-column-end: none
+
+
+//MAIN
+.main
+  padding: 53px 40px 40px 40px
+  font-size: 20px
+  font-style: normal
+  font-weight: 500
+  line-height: normal
+  letter-spacing: 0.5px
+  color: #4C5272
+  box-shadow: 0px 3px 8px 0px rgba(76, 82, 114, 0.12)
+
+.tabcontent
+  width: 100%
+  height: 100%
+
+
+.order1
+  color: #4C5272
+  font-family: Futura
+  font-size: 16px
+  font-style: normal
+  font-weight: 500
+  line-height: normal
+  letter-spacing: -0.32px
+
+#orders-h
+  height: 42px
+
+#ordersCount
+  padding: 3px 12px
+  border-radius: 10px
+  background: var(--active, #4398D3)
+  font-size: 13px
+  font-style: normal
+  font-weight: 500
+  line-height: normal
+  letter-spacing: 0.325px
+
+
+.select
+  select
+    border-radius: 10px
+    padding: 10px
+    font-size: 14px
+    width: 284px
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+    letter-spacing: 0.35px
+    color: #4C5272
+    background: #FFF
+    background-image: url('img/arrow.svg')
+    background-position: center right 10px
+    background-repeat: no-repeat
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    cursor: pointer
+
+    &:hover
+      border: 3px solid var(--active, #4398D3)
+
+
+#filter
+  option
+    padding: 10px
+
+
+.search-container
+  position: relative
+  display: inline-block
+  width: 339px
+  color: #A1A5BA
+
+  input
+    width: 339px
+    border-radius: 10px
+    cursor: pointer
+    font-size: 14px
+    font-style: normal
+    font-weight: 500
+
+    &:hover
+      border: 3px solid var(--active, #4398D3)
+
+
+input[type="text"]
+  padding: 10px 10px 10px 48px
+  border: none
+
+  ::placeholder
+    color: #A1A5BA
+
+button[type="submit"]
+  position: absolute
+  top: 0
+  left: 0
+  background-color: transparent
+  border: none
+  border-radius: 5px
+  padding: 10px
+  cursor: pointer
+
+
+.fa-search
+  color: #4C5272
+
+
+.all
+  border-radius: 10px 10px 0 0
+  background: #FFF
+  width: 140px
+  padding: 14px 20px
+
+
+.main-header
+  display: flex
+  justify-content: space-between
+
+.select-search
+  display: flex
+  gap: 10px
+
+.default-option
+  display: none
+
+
+.main-header-2
+  display: grid
+  grid-template-columns: repeat(8, 1fr)
+  height: 50px
+  align-items: center
+  background: #FFF
+
+.main-primary
+  display: grid
+  grid-template-rows: repeat(8, 1fr)
+  width: 100%
+  height: 100%
+  background: #FFF
+  border-radius: 0px 10px 10px 10px
+  padding: 18px 20px 0 20px
+
+  h4
+    margin-bottom: 11px
+
+  p
+    padding-bottom: 17px
+    border-bottom: 1px solid #4C5272
+
+
+table
+  margin-bottom: 17px
+  width: 100%
+  border-collapse: collapse
+
+  tr:nth-child(n + 2)
+    border-bottom: 1px solid #D6DAE6
+
+  tr:nth-child(1)
+    color: #A1A5BA
+    height: 20px
+
+  td
+
+    font-size: 16px
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+    letter-spacing: -0.32px
+    text-align: left
+
+    &:nth-child(-n + 6)
+      padding: 0 80px 0 0
+
+    &:nth-child(7)
+
+.details
+  padding-right: 18px
+  cursor: pointer
+
+.packing-td
+  cursor: pointer
+  min-width: 160px
+  flex-shrink: 0
+  height: 30px
+
+.packing
+  display: flex
+  justify-content: center
+  border: 2px solid #E49D3E
+  border-radius: 10px
+  color: #E49D3E
+  padding: 6.5px 27.5px
+
+
+.order1
+  height: 51.6px
+  border-collapse: separate
+
+.main-footer
+  display: flex
+  justify-content: space-between
+  padding: 12px 0
+  border-top: 1px solid #D6DAE6
+  color: #A1A5BA
+
+.table-container
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  min-height: 880px
+  /* максимальная высота блока */
+  overflow: hidden
+  position: relative
+  background: #FFF
+  padding: 18px 20px 0 20px
+  border-radius: 0px 10px 10px 10px
+
+
+.page
+  display: flex
+  align-items: baseline
+  gap: 10px
+
+  select
+    height: 100%
+    border-radius: 4px
+    border: 1px solid var(--line-color, #E7E9ED)
+    background: var(--background, #F9F9F9)
+    font-size: 14px
+    font-style: normal
+    font-weight: 500
+    line-height: 112.5%
+    color: #4C5272
+    padding: 4px 5px
+
+
+.pagination
+  display: flex
+  align-items: center
+
+
+.pagination button
+  background: transparent
+  cursor: pointer
+
+.pagination .page-number.active
+  border-radius: 4px
+  background: #4398D3
+  color: #FFF
+
+.pagination .page-number
+  cursor: pointer
+  width: 24px
+  height: 24px
+  padding: 4px 10px
+
+
+
+
+
+@media screen and (max-width: 1000px)
+
+  .main
+    padding: 53px 40px 40px 16px
+  .wrapper.open
+    grid-template-columns: minmax(155px, 14.6%) minmax(20px, 100%)
+  .admin
+    margin-top: 0
+
+  .wrapper
+    grid-template-columns: minmax(68px, 8.6%) minmax(20px, 100%)
+
+  .aside
+    padding: 40px 0px 0 10px
+    nav, .admin
+      display: none
+
+  .aside.open
+    .tablinks
+      padding-left: 5px
+    nav, .admin
+      display: flex
+    span
+      display: none
+
+  .all
+    width: 75px
+
+  .select select
+    width: 115px
+  .search-container input
+    width: 116px
+  .search-container
+    width: 116px
+  input[type=text]
+    padding-left: 35px
+
+
+@media screen and (min-height: 1080px)
+  .admin
+    margin-top: 679px
+
+@media screen and (max-width: 1700px)
+    table td:nth-child(-n+6)
+      padding: 0 15px 0 0
+
+    .packing
+      padding: 6.5px 5.5px
